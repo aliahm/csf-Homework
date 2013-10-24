@@ -1,0 +1,6 @@
+# Grader Name: Mary Kallem
+# Evergreen Login: kalmar19
+import lab2
+x = n
+y = "Hello World"
+print y(n)
