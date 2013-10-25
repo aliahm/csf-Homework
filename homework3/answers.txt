@@ -1,5 +1,5 @@
-Name: ...
-Evergreen Login: ...
+Name: Ahmed Ali
+Evergreen Login: AliAhm18
 Computer Science Foundations
 Programming as a Way of Life
 Fall 2013
@@ -19,20 +19,28 @@ Problem 1:
 
 Problem 2:
 
-...
+GC-content: 0.43029262963
 
 Problem 3:
 
-...
+When I commented out seq = "" and linenum = 0, the program didnt run becasue it had an error. Its said to Traceback to the line it
+had an error in. Every varible needs to have a value or python wouldn't know what to do with the variable. When I commented out the varibles
+they became undifined.
+
+When I commented out gc_count = 0, the program didnt run becasue it had an error. Its said to Traceback to the line it
+had an error in. Every varible needs to have a value or python wouldn't know what to do. When I commented out what the varibale value
+was it became undifined.
 
 Problem 4:
 
-...
+GC-content: 0.3
+AT-content: 0.7
 
 Collaboration:
+I received help from Jessica Morton (Classmate) and Kahea (Tutor).
 
-...
 
 Reflection:
+I learned that every variable needs a value in order to run the program. I wish this assignment was written more better its was really 
+confusing because of to much wording and would jump around from problem to problem.
 
-...

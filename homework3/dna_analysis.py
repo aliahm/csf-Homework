@@ -1,5 +1,5 @@
-# Name: ...
-# Evergreen Login: ...
+# Name: Ahmed Ali
+# Evergreen Login: Aliahm18
 # Computer Science Foundations
 # Programming as a Way of Life
 # Homework 3: DNA analysis (Part 1)
@@ -15,7 +15,6 @@
 
 # The sys module supports reading files, command-line arguments, etc.
 import sys
-
 
 ###########################################################################
 ### Read the nucleotides into a variable named seq
@@ -53,7 +52,7 @@ for line in inputfile:
 total_count = 0
 # Number of G and C nucleotides seen so far.
 gc_count = 0
-
+at_count = 0
 
 # for each base pair in the string,
 for bp in seq:
@@ -64,10 +63,13 @@ for bp in seq:
     if bp == 'C' or bp == 'G':
         # increment the count of gc
         gc_count = gc_count + 1
-
+    if bp == 'A' or bp == 'T':
+        
+        at_count = at_count + 1
 
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
-
+at_content = float(at_count) / total_count
 # Print the answer
 print 'GC-content:', gc_content
+print 'AT-content:', at_content
