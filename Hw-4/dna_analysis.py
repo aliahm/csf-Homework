@@ -16,6 +16,7 @@
 # The sys module supports reading files, command-line arguments, etc.
 import sys
 
+
 ###########################################################################
 ### Read the nucleotides into a variable named seq
 ###
@@ -54,6 +55,9 @@ total_count = 0
 gc_count = 0
 at_count = 0
 g_count = 0
+c_count = 0
+a_count = 0
+t_count = 0
 
 # for each base pair in the string,
 for bp in seq:
@@ -66,12 +70,25 @@ for bp in seq:
         gc_count = gc_count + 1
     if bp == 'A' or bp == 'T':
         at_count = at_count + 1
-
+    if bp == 'G':
+        g_count = g_count + 1
+    if bp == 'C':
+        c_count = c_count + 1
+    if bp == 'A':
+        a_count = a_count + 1
+    if bp == 'T':
+        t_count = t_count + 1            
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
 at_content = float(at_count) / total_count
 g_content = float(g_count) / total_count
+c_content = float(c_count) / total_count
+a_content = float(a_count) / total_count
+t_content = float(t_count) / total_count
 # Print the answer
 print 'GC-content:', gc_content
 print 'AT-content:', at_content
 print 'G_content:', g_content
+print 'C_content:', c_content
+print 'A_content:', a_content
+print 'T_content:', t_content 
