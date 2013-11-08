@@ -86,9 +86,14 @@ c_content = float(c_count) / total_count
 a_content = float(a_count) / total_count
 t_content = float(t_count) / total_count
 # Print the answer
-print 'GC-content:', gc_content
-print 'AT-content:', at_content
-print 'G_content:', g_content
-print 'C_content:', c_content
-print 'A_content:', a_content
-print 'T_content:', t_content 
+print 'GC-count:', gc_content
+print 'AT-count:', at_content
+print 'G_count:', g_content
+print 'C_count:', c_content
+print 'A_count:', a_content
+print 'T_count:', t_content 
+
+
+sum_count = a_count + c_count + g_count + t_count
+print 'Sum_count:', sum_count
+ 
