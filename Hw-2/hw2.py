@@ -19,14 +19,13 @@ print "Problem 1 solution follows:"
 # including 101 and places it in the variable "sum"
 #Use a while loop to solve Gauss's general problem
 
-n = 0
+n = 1
 sum = 0
 
-while n<101:
+while (n<101):
     sum = sum + n
-    print sum
     n = n + 1
-
+    print sum
 ###
 ### Problem 2
 ### 
@@ -61,7 +60,7 @@ print "Triangular number", n, "via formula:", n*(n+1)/2
 print "Problem 4 solution follows:"
 
 n = 10
-for i in range(1,n+1):
+for i in range(1, 11, 1):
     n = n * i
     print n
 ###
@@ -70,13 +69,11 @@ for i in range(1,n+1):
 
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 5 solution follows:"
-
+x = n
 n = 10
-for i in range(10,n-1):
-    n = n/i
-    print n  
-
-
+for i in range(n, 0, -1):
+    print x
+    x = x/i
 
 ###
 ### Problem 6
@@ -85,19 +82,28 @@ for i in range(10,n-1):
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 6 solution follows:"
 
-# ... write your code and comments here (and remove this line)
-
+y = 1
+for i in range(1, 11, +1):
+    factorial = 1
+    for j in range(1, i+1, 1): 
+        factorial = factorial * j
+    print factorial
+    y = y + 1.0/factorial
+    print
+print y
+        
 ###
 ### Collaboration
 ###
 
-# ... List your collaborators and other sources of help here (websites, books, etc.),
+# ... Kahea(Tutor) Khan Academy (Youtube)
 # ... as a comment (on a line starting with "#").
 
 ###
 ### Reflection
 ###
+"""I took me about 10 hours with all the readings and help I got,
+the readings helpful and plus going to the tutora where ever I got
+stuck they showed me how to do it correct."""
 
-# ... Write how long this assignment took you, including doing all the readings
-# ... and tutorials linked to from the homework page. Did the readings, tutorials,
-# ... and lecture contain everything you needed to complete this assignment?
+
