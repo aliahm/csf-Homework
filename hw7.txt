@@ -1,0 +1,8 @@
+Work up to 7 hours on Homework 5/7 due by Friday (11/22) 5pm.
+
+Rename your file hw6.py to hw6-ours.py, no need to rewrite it.
+Do your paired team's Homework 6 problems and commit it as hw6.py, and then grade their problems,
+and ask them to grade yours.
+
+A Java beginners online class like CodeAcademy:
+https://www.udemy.com/
