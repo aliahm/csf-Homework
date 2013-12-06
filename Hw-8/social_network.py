@@ -171,6 +171,17 @@ def number_of_common_friends_map(graph, user):
     number_of_common_friends_map(G, "A")  =>   { 'B':2, 'C':1 }
     """
     print "To be implemented"
+    d = {}
+    f = graph.neighbors(user)
+    G = graph.nodes()
+    for i in G:
+        if i not in f and i is not user:
+            l = len(common_friends(graph, user, i))
+            if l > 0:
+                d [i] = l
+    print d
+    return d
+                
 
 assert number_of_common_friends_map(practice_graph, "A") == {'D': 2, 'F': 1}
 
