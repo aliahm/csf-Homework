@@ -80,7 +80,7 @@ rj.add_edge("Romeo", "Montague")
 rj.add_edge("Romeo", "Mercutio")
 rj.add_edge("Montague", "Escalus")
 rj.add_edge("Escalus", "Mercutio")
-rj.add_edge("Mecutio", "Paris")
+rj.add_edge("Mercutio", "Paris")
 rj.add_edge("Paris", "Escalus")
 rj.add_edge("Benvolio", "Montague")
 
@@ -96,7 +96,7 @@ def draw_rj():
 # Comment out this line after you have visually verified your rj graph and
 # created your PDF file.
 # Otherwise, the picture will pop up every time that you run your program.
-draw_rj()
+#draw_rj()
 
 
 ###
@@ -114,14 +114,38 @@ def friends_of_friends(graph, user):
     """Returns a set of friends of friends of the given user, in the given graph.
     The result does not include the given user nor any of that user's friends.
     """
-    print "To be implemented"
+    s = set()
+    n = graph.neighbors(user)
+    
+    for x in n:
+        p = graph.neighbors(x)
+        print p
+        for i in p:
+            if i not in n and i is not user:
+                s.add(i)
+    print s
+    return s 
+        
+        
+    
+    print n
 
 assert friends_of_friends(rj, "Mercutio") == set(['Benvolio', 'Capulet', 'Friar Laurence', 'Juliet', 'Montague'])
 
 
 def common_friends(graph, user1, user2):
     """Returns the set of friends that user1 and user2 have in common."""
-    print "To be implemented"
+    s = set()
+    n = graph.neighbors(user1)
+    z = graph.neighbors(user2)
+   
+    
+    for x in n:
+        if x in z:
+            s.add(x)
+    print s
+    return s
+     
 
 assert common_friends(practice_graph,"A", "B") == set(['C'])
 assert common_friends(practice_graph,"A", "D") == set(['B', 'C'])
