@@ -1,14 +1,16 @@
-Name: ...
-UW NetID: ...
-CSE 140
-Homework 3: Election prediction
+# Name: Ahmed M Ali
+# Evergreen Login: Aliahm18
+# Programming as a Way of Life
+# Homework 5: Election prediction
 
 
 Collaboration:
 
-...
+I worked with Haron Yunis, Jessica Morton also recieved helped from Kahea(Tutor)
 
 Reflection:
 
-...
+I learned how to use dictionary and put list in it, and using for loops to take certain
+data out of a file and putting it into use.
+Using conditionals and nested loops 
 
